@@ -9,3 +9,5 @@ SQLite;
 Basta baixar o projeto, executar com Visual Studio, Compativel com as versões dos Frameworks citados acima, a consulta pode ser feita direto no browser de internet padrão ou utilizando o Postman atravéz do endereço: https://localhost:44314/Awards
 # Fonte de dados
 Para alterar a fonte de dados, substitua o conteúdo do arquivo movielist.csv dentro do projeto GRA.Application na pasta \Resources
+# OBSERVAÇÃO
+Os teste integrados foram efetuados com base no Arquivo CSV Original, ao alterar o arquivo, alterar o resultado esperado na classe de testes (AwardControllerTest.cs), no metodo de teste GetIntervalTest().
