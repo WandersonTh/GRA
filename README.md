@@ -10,4 +10,4 @@ Basta baixar o projeto, executar com Visual Studio, Compativel com as versões d
 # Fonte de dados
 Para alterar a fonte de dados, substitua o conteúdo do arquivo movielist.csv dentro do projeto GRA.Application na pasta \Resources
 # OBSERVAÇÃO
-Os teste integrados foram efetuados com base no Arquivo CSV Original, ao alterar o arquivo, alterar o resultado esperado na classe de testes (AwardControllerTest.cs), no metodo de teste GetIntervalTest().
+O teste integrado foi efetuado com base no Arquivo CSV Original, ao alterar o arquivo, alterar o resultado esperado na classe de testes (AwardControllerTest.cs), no metodo de teste GetIntervalTest().
