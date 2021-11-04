@@ -9,6 +9,25 @@ namespace GRA.DataBase
     {
         private static SqliteConnection SqliteConnection { get; set; }
 
+        public DatabaseContext()
+        { }
+
+        public DatabaseContext(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (SqliteConnection == null)
+            {
+                SqliteConnection = new SqliteConnection("Data Source=:memory:");
+                SqliteConnection.Open();
+            }
+
+            optionsBuilder
+                .UseSqlite(SqliteConnection)
+                .UseLazyLoadingProxies();
+
+            EnableLogWhenDebugging(optionsBuilder);
+        }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (SqliteConnection == null)
