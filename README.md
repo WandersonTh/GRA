@@ -1,5 +1,5 @@
 # GRA
-Api RestFull criada para o Teste tecnico da empresa Texo IT
+Api RestFull que retorna o os diretores com maior e menor intervalo de tempo a ganhar o prêmio Framboesa de Ouro
 # Tecnologias utilizadas:
 Linguagem C#;
 .Net Core 5.0;
